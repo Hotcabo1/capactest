@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page con Bootstrap 5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Landing Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#slider">Slider</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#noticias">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#eventos">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div id="slider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Aquí se cargarán las imágenes del slider -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Noticias -->
+  <div id="noticias" class="container my-5">
+    <h2 class="mb-4">Noticias</h2>
+    <div class="row" id="noticias-container">
+      <!-- Aquí se cargarán las noticias -->
+    </div>
+  </div>
+
+  <!-- Eventos -->
+  <div id="eventos" class="container my-5">
+    <h2 class="mb-4">Eventos</h2>
+    <div class="row" id="eventos-container">
+      <!-- Aquí se cargarán los eventos -->
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <divid="contacto" class="container my-5">
+    <h2 class="mb-4">Contacto</h2>
+    <form action="submit.php" method="POST">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2023 Landing Page. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/api.js"></script>
+</body>
+</html>
